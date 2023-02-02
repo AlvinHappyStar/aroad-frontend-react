@@ -1,13 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Box } from '@mui/material';
-import { DISPLAY_FLEX_COLUMN, DISPLAY_FLEX_ROW } from '../../style/default';
-import { H1_Desktop, Link_Desktop, Body_Text_Desktop, H1_Mobile, Body_Text_Mobile, Link_Mobile, Description_Text_Desktop } from '../../style/typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import * as color from '../../style/basic/color';
-import { SCREEN_MEDIUM_WIDTH, SCREEN_SMALL_WIDTH } from '../../default/value';
-import TextEdit_Custom from '../../style/form';
-import { Button_Contained } from '../../style/button';
-import CheckBox_Circle from '../../style/checkbox';
+import { DISPLAY_FLEX_ROW } from '../../style/default';
+import { SCREEN_SMALL_WIDTH } from '../../default/value';
 
 function Banner() {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -30,7 +24,7 @@ function Banner() {
                 <Box sx={{
                     position: 'relative',
                 }}>
-                    <img alt='' src='./images/banner_about.png'
+                    <img alt='' src='./images/Car_banner.png'
                         style={{
                             position: 'relative',
                             width: '100vw',
@@ -50,7 +44,7 @@ function Banner() {
                             width: '100vw',
                         }
                     }}>
-                        <img alt='' src='./images/banner_about.png'
+                        <img alt='' src='./images/Car_banner.png'
                             style={{
                                 width: '100vw',
                                 minWidth: '640px',

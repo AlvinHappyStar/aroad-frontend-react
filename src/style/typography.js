@@ -84,20 +84,20 @@ export const H4_Mobile = styled(Typography)({
 
 export const H5_Desktop = styled(Typography)({
     fontFamily: font.muliFont,
-    fontSize: '20px',
+    fontSize: '14px',
     fontWeight: '900',
     textAlign: 'left',
-    lineHeight: '20px',
+    lineHeight: '12px',
     fontStyle: 'normal',
     color: color.heading,
 });
 
 export const H5_Mobile = styled(Typography)({
     fontFamily: font.muliFont,
-    fontSize: '16px',
+    fontSize: '14px',
     fontWeight: '900',
     textAlign: 'left',
-    lineHeight: '16px',
+    lineHeight: '12px',
     fontStyle: 'normal',
     color: color.heading,
 });

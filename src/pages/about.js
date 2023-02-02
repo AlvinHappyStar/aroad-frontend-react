@@ -1,21 +1,21 @@
 import React from 'react';
 import { Box } from '@mui/material';
-import Banner from '../component/home/banner';
-import FindVehicle from '../component/home/findVehicle';
-import DrivingCourse from '../component/home/drivingCourse';
-import DrivingTest from '../component/home/driveTest';
-import TakeTest from '../component/home/takeTest';
-import GetCarLicense from '../component/home/getCarLicense';
+import Banner from '../component/about/banner';
+import MotoringCourse from '../component/about/motoringCourse';
+import OfferCourse from '../component/about/offerCourse';
+import WhyTakeCourse from '../component/about/whyTakeCourse';
+import CarTestDate from '../component/about/cartestdate';
+import GetCarLicense from '../component/about/getCarLicense';
 
 function About() {
     return (
         <>
             <Box>
                 <Banner />
-                <FindVehicle />
-                <DrivingCourse />
-                <DrivingTest />
-                <TakeTest />
+                <MotoringCourse />
+                <OfferCourse />
+                <WhyTakeCourse />
+                <CarTestDate />
                 <GetCarLicense />
             </Box>
         </>

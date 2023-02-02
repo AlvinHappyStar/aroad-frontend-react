@@ -6,7 +6,7 @@ import { SCREEN_MEDIUM_WIDTH, SCREEN_SMALL_WIDTH } from '../../default/value';
 import TextEdit_Custom from '../../style/form';
 import { Button_Contained } from '../../style/button';
 
-function GetCarLicense() {
+function FindLesson() {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     useEffect(() => {
@@ -41,13 +41,26 @@ function GetCarLicense() {
                         alignItems: 'center',
                     }
                 }}>
+                    <Box sx={{
+                        ...DISPLAY_FLEX_ROW,
+                        ...{
+                            alignItems: 'center',
+                        }
+                    }}>
+                        <img alt='' src='./images/flow_horizontal.png'
+                            style={{
+                                width: '270px',
+                                height: '28px',
+                                marginBottom: '20px',
+                            }} />
+                    </Box>
                     {
                         windowWidth > SCREEN_SMALL_WIDTH &&
                         <H2_Desktop style={{
                             width: 'calc(100% - 60px)',
                             maxWidth: '750px',
                             textAlign: 'center',
-                        }}>Learn With an Expert Now and Get Your Car License</H2_Desktop>
+                        }}>Find lessons near you today</H2_Desktop>
                     }
                     {
                         windowWidth <= SCREEN_SMALL_WIDTH &&
@@ -55,26 +68,18 @@ function GetCarLicense() {
                             width: 'calc(100% - 60px)',
                             maxWidth: '750px',
                             textAlign: 'center',
-                        }}>Learn With an Expert Now and Get Your Car License</H2_Mobile>
+                        }}>Find lessons near you today</H2_Mobile>
                     }
-                    <Body_Title_Desktop style={{
-                        width: 'calc(100% - 60px)',
-                        maxWidth: '850px',
-                        textAlign: 'center',
-                        marginTop: '30px',
-                    }}>Let us help you find the right instructor for you! Fill out the form or get in touch with us to let us know what you need and we’ll match you with the right instructor in no time.</Body_Title_Desktop>
                     <Box sx={{
                         width: 'calc(100% - 60px)',
-                        maxWidth: '750px',
-                        boxShadow: '0px 6px 8px rgba(0, 0, 0, 0.16)',
+                        maxWidth: '600px',
                         padding: '25px',
-                        borderRadius: '20px',
                     }}>
                         <H5_Desktop style={{
                             width: 'calc(100% - 60px)',
-                            maxWidth: '750px',
+                            maxWidth: '550px',
                             textAlign: 'left',
-                        }}>Name</H5_Desktop>
+                        }}>Post Code*</H5_Desktop>
                         <TextEdit_Custom
                             placeholder={''}
                             label={''}
@@ -84,15 +89,15 @@ function GetCarLicense() {
                                 marginBottom: '22px',
                                 '& input': {
                                     width: 'calc(100vw - 140px)',
-                                    maxWidth: '700px',
+                                    maxWidth: '550px',
                                 },
                             }}
                         />
                         <H5_Desktop style={{
                             width: 'calc(100% - 60px)',
-                            maxWidth: '750px',
+                            maxWidth: '550px',
                             textAlign: 'left',
-                        }}>Email</H5_Desktop>
+                        }}>Phone Number</H5_Desktop>
                         <TextEdit_Custom
                             placeholder={''}
                             label={''}
@@ -102,29 +107,11 @@ function GetCarLicense() {
                                 marginBottom: '22px',
                                 '& input': {
                                     width: 'calc(100vw - 140px)',
-                                    maxWidth: '700px',
+                                    maxWidth: '550px',
                                 },
                             }}
                         />
-                        <H5_Desktop style={{
-                            width: 'calc(100% - 60px)',
-                            maxWidth: '750px',
-                            textAlign: 'left',
-                        }}>Message</H5_Desktop>
-                        <TextEdit_Custom
-                            placeholder={''}
-                            label={''}
-                            icon={0}
-                            text={''}
-                            style={{
-                                marginBottom: '22px',
-                                '& input': {
-                                    width: 'calc(100vw - 140px)',
-                                    maxWidth: '700px',
-                                    height: '200px',
-                                },
-                            }}
-                        />
+
                         <Box sx={{
                             ...DISPLAY_FLEX_ROW,
                             ...{
@@ -132,7 +119,12 @@ function GetCarLicense() {
                                 margin: '30px 0 10px',
                             }
                         }}>
-                            <Button_Contained>Submit</Button_Contained>
+                            <Button_Contained sx={{
+                            ...DISPLAY_FLEX_ROW,
+                            ...{
+                                width: '550px',
+                            }
+                        }}>Find</Button_Contained>
                         </Box>
                     </Box>
                 </Box>
@@ -141,4 +133,4 @@ function GetCarLicense() {
     );
 }
 
-export default GetCarLicense;
+export default FindLesson;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Grid } from '@mui/material';
 import { DISPLAY_FLEX_COLUMN, DISPLAY_FLEX_ROW } from '../../style/default';
-import { H2_Desktop, H2_Mobile, Body_Title_Desktop, H5_Desktop } from '../../style/typography';
+import { H2_Desktop, H2_Mobile, Body_Title_Desktop, H5_Desktop, H5_Mobile } from '../../style/typography';
 import { SCREEN_MEDIUM_WIDTH, SCREEN_SMALL_WIDTH } from '../../default/value';
 import TextEdit_Custom from '../../style/form';
 import { Button_Contained } from '../../style/button';
@@ -70,11 +70,22 @@ function GetCarLicense() {
                         padding: '25px',
                         borderRadius: '20px',
                     }}>
-                        <H5_Desktop style={{
-                            width: 'calc(100% - 60px)',
-                            maxWidth: '750px',
-                            textAlign: 'left',
-                        }}>Name</H5_Desktop>
+                        {
+                            windowWidth > SCREEN_SMALL_WIDTH &&
+                            <H5_Desktop style={{
+                                width: 'calc(100% - 60px)',
+                                maxWidth: '750px',
+                                textAlign: 'left',
+                            }}>Name</H5_Desktop>
+                        }
+                        {
+                            windowWidth <= SCREEN_SMALL_WIDTH &&
+                            <H5_Mobile style={{
+                                width: 'calc(100% - 60px)',
+                                maxWidth: '750px',
+                                textAlign: 'left',
+                            }}>Name</H5_Mobile>
+                        }
                         <TextEdit_Custom
                             placeholder={''}
                             label={''}
@@ -88,11 +99,22 @@ function GetCarLicense() {
                                 },
                             }}
                         />
-                        <H5_Desktop style={{
-                            width: 'calc(100% - 60px)',
-                            maxWidth: '750px',
-                            textAlign: 'left',
-                        }}>Email</H5_Desktop>
+                        {
+                            windowWidth > SCREEN_SMALL_WIDTH &&
+                            <H5_Desktop style={{
+                                width: 'calc(100% - 60px)',
+                                maxWidth: '750px',
+                                textAlign: 'left',
+                            }}>Email</H5_Desktop>
+                        }
+                        {
+                            windowWidth <= SCREEN_SMALL_WIDTH &&
+                            <H5_Mobile style={{
+                                width: 'calc(100% - 60px)',
+                                maxWidth: '750px',
+                                textAlign: 'left',
+                            }}>Email</H5_Mobile>
+                        }
                         <TextEdit_Custom
                             placeholder={''}
                             label={''}
@@ -106,11 +128,22 @@ function GetCarLicense() {
                                 },
                             }}
                         />
-                        <H5_Desktop style={{
-                            width: 'calc(100% - 60px)',
-                            maxWidth: '750px',
-                            textAlign: 'left',
-                        }}>Message</H5_Desktop>
+                        {
+                            windowWidth > SCREEN_SMALL_WIDTH &&
+                            <H5_Desktop style={{
+                                width: 'calc(100% - 60px)',
+                                maxWidth: '750px',
+                                textAlign: 'left',
+                            }}>Message</H5_Desktop>
+                        }
+                        {
+                            windowWidth <= SCREEN_SMALL_WIDTH &&
+                            <H5_Mobile style={{
+                                width: 'calc(100% - 60px)',
+                                maxWidth: '750px',
+                                textAlign: 'left',
+                            }}>Message</H5_Mobile>
+                        }
                         <TextEdit_Custom
                             placeholder={''}
                             label={''}
