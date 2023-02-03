@@ -12,6 +12,7 @@ function Home() {
         <>
             <Box>
                 <Banner />
+                
                 <FindVehicle />
                 <DrivingCourse />
                 <DrivingTest />

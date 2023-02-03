@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useHistory, useLocation } from 'react-router-dom';
 import { Box, Grid, Typography } from '@mui/material';
 import { DISPLAY_FLEX_COLUMN, DISPLAY_FLEX_ROW } from '../../style/default';
 import { H2_Desktop, H2_Mobile, H4_Desktop, H5_Desktop, Body_Text_Desktop, Description_Text_Desktop, H3_Desktop } from '../../style/typography';
@@ -6,6 +7,14 @@ import { SCREEN_MEDIUM_WIDTH, SCREEN_SMALL_WIDTH } from '../../default/value';
 import { Button_Contained } from '../../style/button';
 
 function DrivingTest() {
+    let history = useHistory();
+    const location = useLocation();
+
+    useEffect(() => {
+        let pathName = location.pathname;
+        console.log(pathName);
+    }, [location]);
+
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     useEffect(() => {
@@ -55,7 +64,9 @@ function DrivingTest() {
                         marginBottom: '20px',
                     }}>Anyone in London knows how highly sought-after driving test dates are in the city. The good news is that A-Road School Of Motoring offers you easy access to the most up-to-date driving test schedules so you can plan your schedule around them. We’ll let you know what days and times are available, so you can choose which day works best for your schedule giving you more time to prepare yourself for the test, as well as more time to get to the testing centre.</Description_Text_Desktop>
                     <Box>
+                        <a href="http://localhost:3001/knack_home" style={{textDecoration:'none'}}>
                         <Button_Contained>Read More</Button_Contained>
+                        </a>
                     </Box>
                 </Box>
                 <Box
@@ -256,7 +267,9 @@ function DrivingTest() {
                         </Grid>
                     </Grid>
                     <Box>
-                        <Button_Contained>More Dates/Book</Button_Contained>
+                        <a href="http://localhost:3001/calendar" style={{textDecoration:'none'}}>
+                        <Button_Contained >More Dates/Book</Button_Contained>
+                        </a>
                     </Box>
                 </Box>
             </Box>

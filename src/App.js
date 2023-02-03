@@ -8,6 +8,9 @@ import Motor from './pages/motor';
 import Navbar from './component/navbar';
 import Footer from './component/footer';
 
+import Calendar from './component/knack/calendar';
+import KnackHome from './component/knack/home';
+
 function App() {
   return (
     <BrowserRouter>
@@ -18,6 +21,8 @@ function App() {
         <Route path='/car_training' render={(props) => <Car {...props} />} />
         <Route path='/hgv_training' render={(props) => <HGV {...props} />} />
         <Route path='/motorcycle_training' render={(props) => <Motor {...props} />} />
+        <Route path='/calendar' render={(props) => <Calendar {...props} />} />
+        <Route path='/knack_home' render={(props) => <KnackHome {...props} />} />
         <Redirect to='/home' />
         <Redirect from='/' to='/home' />
       </Switch>
