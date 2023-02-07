@@ -44,7 +44,7 @@ function Banner() {
                             width: '100vw',
                         }
                     }}>
-                        <img alt='' src='./images/Car_banner.png'
+                        <img alt='' src='./images/Motor_banner.png'
                             style={{
                                 width: '100vw',
                                 minWidth: '640px',

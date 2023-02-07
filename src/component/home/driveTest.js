@@ -64,9 +64,9 @@ function DrivingTest() {
                         marginBottom: '20px',
                     }}>Anyone in London knows how highly sought-after driving test dates are in the city. The good news is that A-Road School Of Motoring offers you easy access to the most up-to-date driving test schedules so you can plan your schedule around them. We’ll let you know what days and times are available, so you can choose which day works best for your schedule giving you more time to prepare yourself for the test, as well as more time to get to the testing centre.</Description_Text_Desktop>
                     <Box>
-                        <a href="http://localhost:3001/knack_home" style={{textDecoration:'none'}}>
+                        
                         <Button_Contained>Read More</Button_Contained>
-                        </a>
+                        
                     </Box>
                 </Box>
                 <Box
@@ -267,7 +267,7 @@ function DrivingTest() {
                         </Grid>
                     </Grid>
                     <Box>
-                        <a href="http://localhost:3001/calendar" style={{textDecoration:'none'}}>
+                        <a href="http://localhost:3001/calendar" style ={{textDecoration:'none'}}>
                         <Button_Contained >More Dates/Book</Button_Contained>
                         </a>
                     </Box>

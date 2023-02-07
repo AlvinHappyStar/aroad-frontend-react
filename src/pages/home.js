@@ -11,8 +11,7 @@ function Home() {
     return (
         <>
             <Box>
-                <Banner />
-                
+                <Banner />                
                 <FindVehicle />
                 <DrivingCourse />
                 <DrivingTest />
