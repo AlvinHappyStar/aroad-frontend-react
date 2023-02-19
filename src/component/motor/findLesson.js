@@ -84,7 +84,6 @@ function FindLesson() {
                             placeholder={''}
                             label={''}
                             icon={0}
-                            text={''}
                             style={{
                                 marginBottom: '22px',
                                 '& input': {
@@ -102,7 +101,6 @@ function FindLesson() {
                             placeholder={''}
                             label={''}
                             icon={0}
-                            text={''}
                             style={{
                                 marginBottom: '22px',
                                 '& input': {

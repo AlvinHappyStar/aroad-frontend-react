@@ -90,7 +90,6 @@ function GetCarLicense() {
                             placeholder={''}
                             label={''}
                             icon={0}
-                            text={''}
                             style={{
                                 marginBottom: '22px',
                                 '& input': {
@@ -119,7 +118,6 @@ function GetCarLicense() {
                             placeholder={''}
                             label={''}
                             icon={0}
-                            text={''}
                             style={{
                                 marginBottom: '22px',
                                 '& input': {
@@ -148,7 +146,6 @@ function GetCarLicense() {
                             placeholder={''}
                             label={''}
                             icon={0}
-                            text={''}
                             style={{
                                 marginBottom: '22px',
                                 '& input': {

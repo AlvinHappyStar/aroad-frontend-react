@@ -80,7 +80,6 @@ function CourseBuilder() {
                                 placeholder={''}
                                 label={'Input Postal Code'}
                                 icon={0}
-                                text={''}
                                 style={{
                                     marginBottom: '22px',
                                     '& input': {
@@ -99,7 +98,6 @@ function CourseBuilder() {
                                 placeholder={''}
                                 label={'Input Contact Number'}
                                 icon={0}
-                                text={''}
                                 style={{
                                     marginBottom: '22px',
                                     '& input': {
@@ -117,7 +115,6 @@ function CourseBuilder() {
                                 placeholder={''}
                                 label={'Input Email Address'}
                                 icon={0}
-                                text={''}
                                 style={{
                                     marginBottom: '22px',
                                     '& input': {
@@ -135,7 +132,6 @@ function CourseBuilder() {
                                 placeholder={''}
                                 label={'Input Email Address'}
                                 icon={0}
-                                text={''}
                                 style={{
                                     marginBottom: '22px',
                                     '& input': {
@@ -154,11 +150,11 @@ function CourseBuilder() {
                         maxWidth: '750px'
                     }
                 }}>
-                    <H5_Desktop style={{
+                    {/* <H5_Desktop style={{
                         maxWidth: '1440px',
                         textAlign: 'left',
                     }}>What is your driving experience?</H5_Desktop>
-                    <Slider />
+                    <Slider /> */}
                 </Box>
 
                 <Box sx={{
@@ -184,7 +180,6 @@ function CourseBuilder() {
                                 placeholder={''}
                                 label={'Average'}
                                 icon={0}
-                                text={''}
                                 style={{
                                     marginBottom: '22px',
                                     '& input': {
@@ -203,7 +198,6 @@ function CourseBuilder() {
                                 placeholder={''}
                                 label={'Automatic'}
                                 icon={0}
-                                text={''}
                                 style={{
                                     marginBottom: '22px',
                                     '& input': {
@@ -221,7 +215,6 @@ function CourseBuilder() {
                                 placeholder={''}
                                 label={'Include a Driving Test'}
                                 icon={0}
-                                text={''}
                                 style={{
                                     marginBottom: '22px',
                                     '& input': {
@@ -239,7 +232,6 @@ function CourseBuilder() {
                                 placeholder={''}
                                 label={'Weekends or Evenings (+ £50)'}
                                 icon={0}
-                                text={''}
                                 style={{
                                     marginBottom: '22px',
                                     '& input': {

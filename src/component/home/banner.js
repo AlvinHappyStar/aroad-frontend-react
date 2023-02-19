@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Box } from '@mui/material';
 import { DISPLAY_FLEX_COLUMN, DISPLAY_FLEX_ROW } from '../../style/default';
-import { H1_Desktop, Link_Desktop, Body_Text_Desktop, H1_Mobile, Body_Text_Mobile, Link_Mobile, Description_Text_Desktop } from '../../style/typography';
+import { H1_Desktop, Link_Desktop, Body_Text_Desktop, H1_Mobile, Body_Text_Mobile, Link_Mobile, Description_Text_Desktop, H5_Desktop } from '../../style/typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import * as color from '../../style/basic/color';
 import { SCREEN_MEDIUM_WIDTH, SCREEN_SMALL_WIDTH } from '../../default/value';
@@ -140,18 +140,34 @@ function Banner() {
                             margin: '50px',
                         }
                     }}>
-                        <TextEdit_Custom
-                            placeholder={''}
-                            label={'Post Code'}
-                            icon={0}
-                            text={''}
-                        />
-                        <TextEdit_Custom
-                            placeholder={''}
-                            label={'Phone Number'}
-                            icon={0}
-                            text={''}
-                        />
+                        <Box sx={{
+                            ...DISPLAY_FLEX_COLUMN,
+                        }}>
+                            <H5_Desktop style={{
+                                width: 'calc(100% - 60px)',
+                                maxWidth: '750px',
+                                textAlign: 'left',
+                            }}>Post Code</H5_Desktop>
+                            <TextEdit_Custom
+                                placeholder={''}
+                                icon={0}
+                            />
+                        </Box>
+
+                        <Box sx={{
+                            ...DISPLAY_FLEX_COLUMN,
+                        }}>
+                            <H5_Desktop style={{
+                                width: 'calc(100% - 60px)',
+                                maxWidth: '750px',
+                                textAlign: 'left',
+                            }}>Phone Number</H5_Desktop>
+                            <TextEdit_Custom
+                                placeholder={''}
+                                label={'Phone Number'}
+                                icon={0}
+                            />
+                        </Box>
 
                         <Button_Contained>View Dates/Prices</Button_Contained>
                     </Box>

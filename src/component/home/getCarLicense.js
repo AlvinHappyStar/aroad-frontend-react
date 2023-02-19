@@ -76,10 +76,6 @@ function GetCarLicense() {
                             textAlign: 'left',
                         }}>Name</H5_Desktop>
                         <TextEdit_Custom
-                            placeholder={''}
-                            label={''}
-                            icon={0}
-                            text={''}
                             style={{
                                 marginBottom: '22px',
                                 '& input': {
@@ -97,7 +93,6 @@ function GetCarLicense() {
                             placeholder={''}
                             label={''}
                             icon={0}
-                            text={''}
                             style={{
                                 marginBottom: '22px',
                                 '& input': {
@@ -115,7 +110,6 @@ function GetCarLicense() {
                             placeholder={''}
                             label={''}
                             icon={0}
-                            text={''}
                             style={{
                                 marginBottom: '22px',
                                 '& input': {

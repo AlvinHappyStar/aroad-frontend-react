@@ -41,37 +41,6 @@ const TextEdit_Custom = ({ placeholder, label, icon, text, style }) => {
                         display: 'none',
                     },
                 }} />
-            <Typography sx={{
-                position: 'absolute',
-                top: '-2px',
-                left: '5px',
-                fontFamily: font.muliFont,
-                fontSize: '14px',
-                fontWeight: 'bold',
-                fontStyle: 'normal',
-                textAlign: 'left',
-                color: color.heading,
-            }}>{label}</Typography>
-            {
-                icon === 1 &&
-                <CalendarMonthOutlinedIcon sx={ICON_STYLE} />
-            }
-            {
-                icon === 2 &&
-                <ScheduleOutlinedIcon sx={ICON_STYLE} />
-            }
-            {
-                icon === 3 &&
-                <ExpandMoreOutlinedIcon sx={ICON_STYLE} />
-            }
-            {
-                icon === 4 &&
-                <LocationOnOutlinedIcon sx={ICON_STYLE} />
-            }
-            {
-                icon === 5 &&
-                <SearchOutlinedIcon sx={ICON_STYLE} />
-            }
         </Box>
     );
 }
